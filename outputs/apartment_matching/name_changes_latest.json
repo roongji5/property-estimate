@@ -1,0 +1,642 @@
+[
+  {
+    "row": 7,
+    "code": "A13789201",
+    "old": "양재우성KBS(113동)",
+    "new": "우성KBS(113동)",
+    "address": "서울특별시 서초구 바우뫼로 91",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 121,
+    "code": "A15722001",
+    "old": "마곡삼성",
+    "new": "마곡삼성아파트",
+    "address": "서울특별시 강서구 방화대로34길 113",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 369,
+    "code": "A13184804",
+    "old": "묵동신도1차",
+    "new": "신도",
+    "address": "서울특별시 중랑구 공릉로13길 30",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 408,
+    "code": "A13580601",
+    "old": "개포우성9차",
+    "new": "우성9차아파트901동,902동",
+    "address": "서울특별시 강남구 개포로 311",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 534,
+    "code": "A15681802",
+    "old": "사당현대아파트",
+    "new": "현대",
+    "address": "서울특별시 동작구 사당로17길 111",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 636,
+    "code": "A13817202",
+    "old": "송파성지",
+    "new": "성지",
+    "address": "서울특별시 송파구 송이로12길 11",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 765,
+    "code": "A13085901",
+    "old": "전농동아",
+    "new": "동아",
+    "address": "서울특별시 동대문구 서울시립대로 31",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 818,
+    "code": "A13586602",
+    "old": "삼성홍실",
+    "new": "홍실아파트",
+    "address": "서울특별시 강남구 영동대로128길 15",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 824,
+    "code": "A13402002",
+    "old": "천호태영",
+    "new": "천호태영아파트",
+    "address": "서울특별시 강동구 천호대로 1055",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 885,
+    "code": "A13302203",
+    "old": "하왕극동미라주",
+    "new": "극동미라주",
+    "address": "서울특별시 성동구 난계로 73",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 949,
+    "code": "A15703301",
+    "old": "등촌8단지주공아파트",
+    "new": "등촌7,8단지주공아파트",
+    "address": "서울특별시 강서구 공항대로43길 104",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 956,
+    "code": "A14380409",
+    "old": "광장극동1차",
+    "new": "극동1",
+    "address": "서울특별시 광진구 아차산로 552",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 976,
+    "code": "A13302204",
+    "old": "하왕금호베스트빌",
+    "new": "금호베스트빌",
+    "address": "서울특별시 성동구 난계로 114-31",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 977,
+    "code": "A12185304",
+    "old": "신공덕2차삼성래미안",
+    "new": "신공덕래미안2차",
+    "address": "서울특별시 마포구 만리재로 74",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1064,
+    "code": "A15703304",
+    "old": "등촌주공2단지",
+    "new": "등촌1,2단지주공아파트",
+    "address": "서울특별시 강서구 강서로68길 36",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1081,
+    "code": "A15603204",
+    "old": "상도래미안1차",
+    "new": "상도동래미안1차",
+    "address": "서울특별시 동작구 등용로 37",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1097,
+    "code": "A13383801",
+    "old": "옥수중앙하이츠",
+    "new": "옥수하이츠",
+    "address": "서울특별시 성동구 한림말길 50",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1121,
+    "code": "A12009304",
+    "old": "홍제유원하나",
+    "new": "유원하나",
+    "address": "서울특별시 서대문구 세검정로 134",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1132,
+    "code": "A13611201",
+    "old": "래미안길음2차아파트",
+    "new": "길음뉴타운5단지(래미안)",
+    "address": "서울특별시 성북구 길음로 74",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1221,
+    "code": "A12119007",
+    "old": "창전삼성",
+    "new": "창전래미안",
+    "address": "서울특별시 마포구 서강로 95",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1234,
+    "code": "A12180407",
+    "old": "공덕삼성",
+    "new": "공덕1삼성래미안",
+    "address": "서울특별시 마포구 마포대로 115-8",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1249,
+    "code": "A13923103",
+    "old": "하계청구",
+    "new": "청구",
+    "address": "서울특별시 노원구 공릉로 351",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1263,
+    "code": "A12102008",
+    "old": "삼성래미안공덕2차",
+    "new": "공덕2삼성래미안",
+    "address": "서울특별시 마포구 마포대로20길 26",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1352,
+    "code": "A13789203",
+    "old": "양재우성",
+    "new": "우성",
+    "address": "서울특별시 서초구 바우뫼로 91",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1356,
+    "code": "A15681108",
+    "old": "대방주공2단지",
+    "new": "주공2",
+    "address": "서울특별시 동작구 여의대방로44길 47",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1358,
+    "code": "A13087407",
+    "old": "휘경리오포레2단지 아파트",
+    "new": "휘경리오포레아파트(2단지)",
+    "address": "서울특별시 동대문구 한천로 248",
+    "method": "normalized_name"
+  },
+  {
+    "row": 1370,
+    "code": "A13302001",
+    "old": "청계벽산",
+    "new": "벽산",
+    "address": "서울특별시 성동구 무학로 50",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1375,
+    "code": "A15603205",
+    "old": "상도건영",
+    "new": "건영",
+    "address": "서울특별시 동작구 만양로 26",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1412,
+    "code": "A14380414",
+    "old": "극동2차아파트",
+    "new": "극동2",
+    "address": "서울특별시 광진구 아차산로 552",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1421,
+    "code": "A12181404",
+    "old": "도화현대홈타운",
+    "new": "현대홈타운",
+    "address": "서울특별시 마포구 새창로8길 72",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1427,
+    "code": "A15210107",
+    "old": "오류동부골든",
+    "new": "동부골든",
+    "address": "서울특별시 구로구 고척로 49",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1446,
+    "code": "A13480906",
+    "old": "길동신동아",
+    "new": "신동아",
+    "address": "서울특별시 강동구 천중로 264",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1451,
+    "code": "A15785711",
+    "old": "방화2-2 그린",
+    "new": "방화그린",
+    "address": "서울특별시 강서구 방화대로48길 40",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1457,
+    "code": "A10045403",
+    "old": "신당삼성(분양)",
+    "new": "삼성",
+    "address": "서울특별시 중구 청구로1길 23",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1472,
+    "code": "A11005401",
+    "old": "광화문스페이스본 아파트",
+    "new": "광화문스페이스본(101동~105동)",
+    "address": "서울특별시 종로구 사직로8길 4",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1492,
+    "code": "A13185607",
+    "old": "신내건영2차아파트",
+    "new": "건영2차",
+    "address": "서울특별시 중랑구 신내로7길 20",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1493,
+    "code": "A12012202",
+    "old": "DMC래미안클라시스(분양)",
+    "new": "DMC래미안클라시스",
+    "address": "서울특별시 서대문구 증가로 191",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1503,
+    "code": "A12012203",
+    "old": "남가좌동현대아파트",
+    "new": "남가좌동현대",
+    "address": "서울특별시 서대문구 가재울로 45",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1511,
+    "code": "A13309404",
+    "old": "금호대우",
+    "new": "대우",
+    "address": "서울특별시 성동구 금호동4가 독서당로 272",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1518,
+    "code": "A13009002",
+    "old": "휘경리오포레1단지",
+    "new": "휘경리오포레아파트(1단지)",
+    "address": "서울특별시 동대문구 한천로 248",
+    "method": "normalized_name"
+  },
+  {
+    "row": 1528,
+    "code": "A13606107",
+    "old": "돈암삼성",
+    "new": "돈암동삼성",
+    "address": "서울특별시 성북구 동소문로34길 24",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1533,
+    "code": "A12008003",
+    "old": "독립문극동",
+    "new": "독립문극동(200-0)",
+    "address": "서울특별시 서대문구 독립문공원길 17",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1536,
+    "code": "A13187305",
+    "old": "신내9단지",
+    "new": "신내9진흥",
+    "address": "서울특별시 중랑구 신내로 127",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1550,
+    "code": "A13120002",
+    "old": "면목2동한신아파트",
+    "new": "면목한신",
+    "address": "서울특별시 중랑구 중랑천로 20",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1554,
+    "code": "A13611202",
+    "old": "길음동부센트레빌",
+    "new": "길음동동부센트레빌(1278-0)",
+    "address": "서울특별시 성북구 숭인로2길 61",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1561,
+    "code": "A13386702",
+    "old": "서울숲한신더휴아파트",
+    "new": "서울숲 한신 더 휴",
+    "address": "서울특별시 성동구 고산자로 164",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1563,
+    "code": "A12181103",
+    "old": "마포태영아파트",
+    "new": "대흥동태영아파트",
+    "address": "서울특별시 마포구 독막로 266",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1573,
+    "code": "A10044002",
+    "old": "롯데캐슬베네치아",
+    "new": "롯데캐슬",
+    "address": "서울특별시 중구 청계천로 400",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1586,
+    "code": "A10045404",
+    "old": "신당약수하이츠",
+    "new": "약수하이츠",
+    "address": "서울특별시 중구 동호로10길 30",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1588,
+    "code": "A13611006",
+    "old": "이편한세상 길음뉴타운4단지",
+    "new": "길음뉴타운4단지(e편한세상)",
+    "address": "서울특별시 성북구 길음로 118",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1609,
+    "code": "A15303002",
+    "old": "관악산벽산타운1단지",
+    "new": "벽산",
+    "address": "서울특별시 금천구 금하로 793",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1622,
+    "code": "A13987305",
+    "old": "하계학여울청구",
+    "new": "학여울청구",
+    "address": "서울특별시 노원구 동일로207길 186",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1647,
+    "code": "A13613008",
+    "old": "월곡두산위브아파트",
+    "new": "월곡두산위브",
+    "address": "서울특별시 성북구 오패산로 46",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1654,
+    "code": "A13307204",
+    "old": "행당대림",
+    "new": "대림e-편한세상",
+    "address": "서울특별시 성동구 행당로 79",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1679,
+    "code": "A10045302",
+    "old": "신당남산타운(분양)",
+    "new": "남산타운",
+    "address": "서울특별시 중구 다산로 32",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1712,
+    "code": "A12078704",
+    "old": "홍제원 현대",
+    "new": "홍제원현대(459-0)",
+    "address": "서울특별시 서대문구 통일로34길 43",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1714,
+    "code": "A13671204",
+    "old": "종암2차아이파크",
+    "new": "아이파크종암동2차",
+    "address": "서울특별시 성북구 종암로9길 71",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1717,
+    "code": "A13671205",
+    "old": "종암SK",
+    "new": "종암에스케이",
+    "address": "서울특별시 성북구 종암로24가길 53",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1729,
+    "code": "A12078705",
+    "old": "홍제인왕산현대",
+    "new": "인왕산현대",
+    "address": "서울특별시 서대문구 통일로34길 46",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1777,
+    "code": "A14272304",
+    "old": "SK북한산시티아파트",
+    "new": "에스케이북한산시티",
+    "address": "서울특별시 강북구 솔샘로 174",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1944,
+    "code": "A14272308",
+    "old": "래미안트리베라2차",
+    "new": "삼성래미안트리베라2단지",
+    "address": "서울특별시 강북구 삼양로27길 19",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 1966,
+    "code": "A13611008",
+    "old": "길음뉴타운8단지",
+    "new": "길음뉴타운8단지(래미안)",
+    "address": "서울특별시 성북구 길음로 33",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 1996,
+    "code": "A13679403",
+    "old": "길음뉴타운7단지",
+    "new": "길음뉴타운7단지(두산위브)",
+    "address": "서울특별시 성북구 길음로13길 22",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2028,
+    "code": "A13611011",
+    "old": "래미안길음뉴타운9단지",
+    "new": "길음뉴타운9단지(래미안)",
+    "address": "서울특별시 성북구 길음로9길 50",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2061,
+    "code": "A13177501",
+    "old": "묵동자이",
+    "new": "묵동자이(2단지)",
+    "address": "서울특별시 중랑구 동일로 932",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2084,
+    "code": "A10078901",
+    "old": "래미안신당하이베르",
+    "new": "래미안하이베르",
+    "address": "서울특별시 중구 퇴계로90길 74",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2086,
+    "code": "A10045002",
+    "old": "청구e편한세상(분양)",
+    "new": "청구e편한세상",
+    "address": "서울특별시 중구 청구로 64",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2128,
+    "code": "A13612002",
+    "old": "성북동아에코빌",
+    "new": "동아에코빌",
+    "address": "서울특별시 성북구 장월로1길 28",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2234,
+    "code": "A10027920",
+    "old": "텐즈힐1단지",
+    "new": "텐즈힐(1단지)",
+    "address": "서울특별시 성동구 무학로 33",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2248,
+    "code": "A13373301",
+    "old": "텐즈힐2구역",
+    "new": "텐즈힐(2단지)",
+    "address": "서울특별시 성동구 마장로 137",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2323,
+    "code": "A15209007",
+    "old": "개봉 푸르지오",
+    "new": "개봉푸르지오",
+    "address": "서울특별시 구로구 남부순환로 775",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2428,
+    "code": "A10026469",
+    "old": "묵동자이2단지아파트",
+    "new": "묵동자이(2단지)",
+    "address": "서울특별시 중랑구 동일로 932",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2431,
+    "code": "A10026403",
+    "old": "고덕숲아이파크아파트",
+    "new": "고덕숲아이파크",
+    "address": "서울특별시 강동구 고덕로80길 134",
+    "method": "normalized_name"
+  },
+  {
+    "row": 2458,
+    "code": "A10026036",
+    "old": "마포자이 더 센트리지 아파트",
+    "new": "마포자이더센트리지(102동~112동)",
+    "address": "서울특별시 마포구 숭문길 98",
+    "method": "reviewed_name"
+  },
+  {
+    "row": 2507,
+    "code": "A10025422",
+    "old": "이편한세상 서울대입구2단지",
+    "new": "e편한세상서울대입구2단지",
+    "address": "서울특별시 관악구 청룡16길 43",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2546,
+    "code": "A10025092",
+    "old": "e편한세상서울대입구아파트",
+    "new": "e편한세상서울대입구2단지",
+    "address": "서울특별시 관악구 청룡16길 43",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2554,
+    "code": "A10025003",
+    "old": "마포그랑자이아파트",
+    "new": "마포그랑자이",
+    "address": "서울특별시 마포구 대흥로 175",
+    "method": "normalized_name"
+  },
+  {
+    "row": 2627,
+    "code": "A10024552",
+    "old": "래미안리더스원",
+    "new": "래미안 리더스원",
+    "address": "서울특별시 서초구 서운로 62",
+    "method": "normalized_name"
+  },
+  {
+    "row": 2788,
+    "code": "A10023060",
+    "old": "노원롯데캐슬시그니처2단지",
+    "new": "노원롯데캐슬시그니처",
+    "address": "서울특별시 노원구 덕릉로 753",
+    "method": "unique_name_at_address"
+  },
+  {
+    "row": 2790,
+    "code": "A10023024",
+    "old": "노원롯데캐슬시그니처1단지",
+    "new": "노원롯데캐슬시그니처",
+    "address": "서울특별시 노원구 덕릉로 753",
+    "method": "unique_name_at_address"
+  }
+]
