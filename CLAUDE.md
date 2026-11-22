@@ -1,29 +1,29 @@
 @AGENTS.md
 
-# Claude Code 전용 안내
+# Claude Code-specific guide
 
-공통 규칙은 위의 AGENTS.md를 따른다. 이 파일에는 Claude Code에만 해당하는 내용을 적는다.
+Follow the shared rules in AGENTS.md above. This file covers only what applies to Claude Code.
 
-## 서브 에이전트 (`.claude/agents/`)
-| 이름 | 역할 | 결과물 |
+## Subagents (`.claude/agents/`)
+| Name | Role | Output |
 | --- | --- | --- |
-| `review-stats` | 통계·계량 검증 (ADF, 그레인저, 패널, 모형) | `reviews/review-stats_<날짜>.md` |
-| `review-data` | 데이터 품질 (건수, 기간, 결측, 조인) | `reviews/review-data_<날짜>.md` |
-| `review-domain` | 부동산 도메인 해석, 인과 과장 점검 | `reviews/review-domain_<날짜>.md` |
-| `review-repro` | 노트북을 복사본으로 재실행해 결과 비교 | `reviews/review-repro_<날짜>.md` |
-| `web-builder` | `outputs/`를 모아 `web/index.html` 파일 하나로 생성 | `web/index.html`, `web/build.py` |
+| `review-stats` | Statistical·econometric review (ADF, Granger, panel, models) | `reviews/review-stats_<date>.md` |
+| `review-data` | Data quality (counts, periods, missing values, joins) | `reviews/review-data_<date>.md` |
+| `review-domain` | Real-estate domain interpretation, overstated-causality check | `reviews/review-domain_<date>.md` |
+| `review-repro` | Re-runs notebooks on copies and compares results | `reviews/review-repro_<date>.md` |
+| `web-builder` | Collects `outputs/` into a single `web/index.html` file | `web/index.html`, `web/build.py` |
 
-부르는 법: "review-stats, review-data, review-domain, review-repro 에이전트로 분석 결과 점검해 줘", "web-builder로 웹 화면 만들어 줘"
+How to call them: "review-stats, review-data, review-domain, review-repro 에이전트로 분석 결과 점검해 줘", "web-builder로 웹 화면 만들어 줘"
 
-- 점검팀은 **지적만** 한다. 수정은 사용자가 보고서를 보고 방향을 정한 뒤에 한다.
-- `web-builder`는 `web/` 안에만 쓴다.
+- The review team **only reports findings**. Fixes happen after the user reads the reports and decides on a direction.
+- `web-builder` writes only inside `web/`.
 
-## 권장 작업 순서
-1. 점검팀 4명 실행 → `reviews/` 보고서 작성
-2. 사용자가 지적 사항을 검토하고 수정 방향 결정 → 수정
-3. README 정리(메인 세션에서 직접)
-4. `web-builder`로 결과 화면 생성
+## Recommended workflow
+1. Run the four reviewers → write reports to `reviews/`
+2. User reviews the findings and decides how to fix them → apply fixes
+3. Clean up the README (directly in the main session)
+4. Generate the results page with `web-builder`
 
-## 스킬
-- 프로젝트 skill은 `.claude/skills/<이름>/SKILL.md`에 둔다.
-- `web-builder`에 연결하려면 `.claude/agents/web-builder.md` frontmatter의 `skills:` 줄에 이름을 적는다.
+## Skills
+- Put project skills in `.claude/skills/<name>/SKILL.md`.
+- To connect one to `web-builder`, add its name to the `skills:` line in the frontmatter of `.claude/agents/web-builder.md`.

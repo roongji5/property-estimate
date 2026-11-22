@@ -1,34 +1,34 @@
 # AGENTS.md
 
-이 저장소에서 작업하는 모든 AI 코딩 도구(Codex, Claude Code 등)가 따르는 공통 지침이다.
+Shared guidelines for every AI coding tool (Codex, Claude Code, etc.) working in this repository.
 
-## 프로젝트 개요
-- 서울시 아파트 실거래가(2017-10~2026-10)로 가격 흐름과 아파트 특성·교육환경·직주근접·정책·금리의 관계를 분석한다.
-- 분석은 Python + Jupyter Notebook(`src/01~07`)으로 한다.
-- 결과는 DB 없이 로컬에서 열리는 HTML·CSS·JavaScript 화면(`web/`)으로 보여 줄 예정이다.
-- 자세한 내용은 `README.md`를 본다.
+## Project overview
+- Analyzes Seoul apartment transaction prices (2017-10 to 2026-10) and how they relate to apartment characteristics, education environment, job-housing proximity, policy, and interest rates.
+- Analysis is done in Python + Jupyter Notebook (`src/01~07`).
+- Results will be shown as a local HTML·CSS·JavaScript page with no database (`web/`).
+- See `README.md` for details.
 
-## 폴더 구조
-| 폴더 | 내용 | 다루는 방법 |
+## Folder structure
+| Folder | Contents | How to handle |
 | --- | --- | --- |
-| `data/` | 실거래가 통합 엑셀, 교육·직주근접·정책 원자료, `원본폴더` | **읽기만** 한다 |
-| `src/` | 분석 노트북 01~07 | 수정하기 전에 묻는다 |
-| `outputs/` | 노트북이 저장한 CSV·PNG 결과 | 덮어쓰기 전에 묻는다 |
-| `web/` | 로컬 HTML 결과 화면 | 새 파일은 만들어도 되고, 기존 파일은 묻는다 |
-| `reviews/` | 분석 점검 보고서(마크다운) | 새 보고서를 추가한다 |
+| `data/` | Consolidated transaction Excel file, education·commute·policy source data, `원본폴더` | **Read only** |
+| `src/` | Analysis notebooks 01–07 | Ask before modifying |
+| `outputs/` | CSV·PNG results saved by the notebooks | Ask before overwriting |
+| `web/` | Local HTML results page | New files are fine; ask before changing existing ones |
+| `reviews/` | Analysis review reports (Markdown) | Add new reports |
 
-## 작업 규칙
-1. **기존 파일은 먼저 묻고 수정·삭제한다.** 노트북, `outputs/`, `data/`, `README.md`, 사용자가 넣은 파일 모두 해당한다. 이번 작업에서 새로 만든 파일만 묻지 않고 고친다.
-2. **인과를 과장하지 않는다.** 가격의 단순 변화, 통계적 연관성, 예측 성능, 가정에 따른 시나리오를 구분해 서술한다. "~때문에 올랐다"는 분석 방법이 뒷받침할 때만 쓴다.
-3. **외부 API를 호출하지 않는다.** 05번의 Google Routes API 호출 셀은 실행하지 말고, 저장된 대중교통 소요시간 CSV를 사용한다.
-4. **노트북 재실행은 복사본으로만 한다.** 임시 디렉터리에 복사해 실행하고, 원본 노트북과 `outputs/`는 덮어쓰지 않는다.
-5. **git commit·push는 사용자가 요청할 때만 한다.** `main`은 승인 리뷰 1개가 필요한 보호 브랜치다. 보통은 새 브랜치에서 PR로 올리고, 사용자가 main에 바로 push하라고 한 경우에만 main에 직접 push한다.
-6. **패키지 설치(`pip install` 등)는 먼저 묻는다.**
-7. **투자 조언을 하지 않는다.** 특정 지역·단지의 매수·매도를 권하는 표현을 쓰지 않는다.
-8. 수치는 `outputs/` 결과나 노트북 출력에서 가져온다. 임의로 만들지 않는다.
-9. 비밀값(`.env`, API 키)은 읽거나 출력하거나 커밋하지 않는다.
+## Working rules
+1. **Ask before modifying or deleting existing files.** This covers notebooks, `outputs/`, `data/`, `README.md`, and any files the user added. Only files you created in the current task may be changed without asking.
+2. **Do not overstate causality.** Distinguish simple price changes, statistical association, predictive performance, and assumption-based scenarios. Write "rose because of ~" only when the analysis method supports it.
+3. **Do not call external APIs.** Do not run the Google Routes API cells in notebook 05; use the saved public-transit travel-time CSV instead.
+4. **Re-run notebooks only on copies.** Copy them to a temporary directory to run, and never overwrite the original notebooks or `outputs/`.
+5. **Commit and push only when the user asks.** `main` is a protected branch that requires one approving review. Normally push to a new branch and open a PR; push directly to main only when the user says to.
+6. **Ask before installing packages (`pip install`, etc.).**
+7. **Do not give investment advice.** Do not use wording that recommends buying or selling in a specific area or complex.
+8. Take numbers from `outputs/` results or notebook output. Never make them up.
+9. Do not read, print, or commit secrets (`.env`, API keys).
 
-## 관례
-- 답변, 문서, 노트북 마크다운은 **한국어**로 쓴다.
-- 새 분석 노트북은 **08번부터** 번호를 붙인다(`src/08_주제.ipynb`). 결과는 `outputs/08_주제/`에 저장한다.
-- 점검 보고서는 `reviews/<역할>_<YYYY-MM-DD>.md`로 저장한다.
+## Conventions
+- Write answers, documents, and notebook Markdown in **Korean**.
+- Number new analysis notebooks **from 08** (`src/08_<topic>.ipynb`), and save their results in `outputs/08_<topic>/`.
+- Save review reports as `reviews/<role>_<YYYY-MM-DD>.md`.
