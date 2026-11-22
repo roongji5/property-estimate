@@ -11,8 +11,11 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+
+# Python 가상환경
 .venv/
 venv/
+env/
 
 # 환경변수 변형
 .env.*
