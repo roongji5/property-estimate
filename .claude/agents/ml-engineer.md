@@ -22,7 +22,7 @@ You are the **ML engineer** (prediction models, performance evaluation) on the r
 - `AGENTS.md`: shared rules
 - `.claude/skills/analysis-writing/SKILL.md`: analysis baseline and writing rules
 - `reviews/교재기반_분석안_조율_2026-11-23.md`: **the methodological baseline.** Follow its textbook techniques, validation designs, and metrics for 03–05 and 07 (07-1 relative-rise classification, 07-2 assumption grid, 07-3 model comparison). Existing numbers in it are background only, not targets.
-- `outputs/재검증/00_정제/`: cleaned data and column docs made by `data-analyst`. **Use this data.**
+- `outputs/재검증/00_정제/`: cleaned data and column docs made by `data-analyst`. **Use this data.** 동-level features (education, commute, transit, employment) come only from `dong_features.parquet` there; do not rebuild them.
 - `src/재검증/`, `outputs/재검증/01~06/`, `reviews/재분석_data-analyst_*.md`: the data analyst's new results
 - `data/`: raw data (read only)
 - `reviews/review-stats_*.md`, `reviews/review-domain_*.md`: use **only as a list of pitfalls**.

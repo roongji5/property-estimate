@@ -63,3 +63,18 @@ For each question, in this order:
 - Titles state only what is shown. No conclusions or interpretation in titles.
   - e.g. "구별 ㎡당 중위가격 변화율 (2019-01~2024-12)"
 - Put units in axis labels. Put sample size and source file in the caption.
+
+## 7. Output files for a future dashboard
+HTML conversion is **not** done now, but every `outputs/재검증/<번호>/` folder must be ready to drop into a single-page dashboard later (`web-builder` will read these files).
+- **`summary.csv` per folder (required):** one row per headline number. Columns: `key, label, value, unit, sample_n, period, split_type, claim_level, source_file, note`.
+  - `claim_level` ∈ `단순 변화 / 통계적 연관 / 예측 기여도 / 가정 시나리오` (section 1).
+  - `split_type` ∈ `없음 / 무작위 / 그룹(단지) / 그룹(동) / 공간블록 / 시간순 / 워크포워드`.
+- **One tidy CSV per chart:** long format, fixed snake_case English column names, UTF-8 (with BOM if Excel must open it), dates as `YYYY-MM` or `YYYY-Qn`. Name it after the chart, e.g. `fig_monthly_price.csv`.
+  - Keep each chart CSV small (a few thousand rows at most). Sample scatter plots with `SEED=42` and say so in `note`.
+  - Store summary values (quantiles for box plots, binned counts for histograms) instead of raw rows.
+- **`meta.json` per folder:** question, method, textbook chapters used, sample period, sample size, data files used, limitations (Korean text). The dashboard shows these as-is.
+- **Model performance:** save random-split and group/time-ordered results in the same table (`split_type` column). For cross-validation save mean and std.
+- **Scenarios (07-2):** save a precomputed grid (`rate_delta, commute_delta, ..., value, value_low, value_high`). The dashboard must not recompute models.
+- **Maps:** save `dong, gu, lat, lon, <value>` points. Do not depend on map tiles.
+- **PNG:** only for charts hard to redraw in JS (e.g. tree diagrams). Width ≤ 1200px, about 200KB or less, Korean font, same title rules as section 6.
+- Undervalued-동 rankings stay out of `summary.csv` and are marked `internal_only` in the filename.
