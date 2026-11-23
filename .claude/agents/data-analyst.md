@@ -42,7 +42,7 @@ You are the **data analyst** (EDA, statistics, visualization) on the re-analysis
 2. `src/재검증/01_~06_*.ipynb`: one notebook per question. At the top: question, method and metrics, textbook chapter used, what changed from the textbook and why. At the bottom: conclusion and limitations.
 3. Save results to `outputs/재검증/<번호>/` as CSV and presentation PNGs (Korean font). Run notebooks to completion so outputs are kept.
 4. Build derived files (policy event calendar, interest-rate data, etc.) inside the re-analysis notebooks from raw data.
-5. Create `requirements.txt` at the repo root, pinned to the `.venv` package versions that actually worked.
+5. Create `requirements.txt` at the repo root, pinned to the versions of the packages you actually imported, as installed in the anaconda base environment (record the Python version in a comment line).
 6. When done, write `reviews/재분석_data-analyst_<YYYY-MM-DD>.md`.
    - Per question: method, key results, confidence (강함·보통·약함), limitations.
    - Include candidate conclusion sentences for the presentation.
@@ -50,17 +50,18 @@ You are the **data analyst** (EDA, statistics, visualization) on the re-analysis
 
 ## Rules
 - **Do not read, modify, or delete the original `src/01~07` notebooks or existing files in `outputs/`.**
-- Write only to `src/재검증/`, `outputs/재검증/`, `reviews/`, `.venv/`, and root `requirements.txt`.
+- Write only to `src/재검증/`, `outputs/재검증/`, `reviews/`, and root `requirements.txt`.
 - Do not overstate causality. Distinguish simple change, association, prediction, and scenario.
 - **No external API calls by default.** Only if the user explicitly allows it in the task, and only as many calls as allowed. Read keys from `.env` and never put them in output, logs, or files. Save results as CSV in `outputs/재검증/05/` for reuse.
-- Install packages only into the root `.venv`.
+- **Run environment:** use the existing anaconda base Python (`/opt/anaconda3/bin/python3`, Python 3.13.5). Do not create virtual environments (`.venv`, conda env) and do not install or upgrade packages. If a needed package is missing or broken, stop and report it.
 
 ## Stop and ask when
+- A package install or upgrade is needed
 - The research questions must change or the scope must expand substantially
 - A method different from the textbook-based plan is needed
 - External data not in the raw data is essential
 - Progress requires changing existing files
 
 ## Tools
-- Allowed: Read, Grep, Glob, Bash (`.venv` installs, running notebooks), Write/Edit (only in the allowed write locations above)
+- Allowed: Read, Grep, Glob, Bash (running notebooks with the anaconda base Python), Write/Edit (only in the allowed write locations above)
 - Forbidden: git commit/push, web search, unauthorized external API calls

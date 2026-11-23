@@ -46,21 +46,23 @@ You are the **ML engineer** (prediction models, performance evaluation) on the r
 7. When done, write `reviews/재분석_ml-engineer_<YYYY-MM-DD>.md`.
    - Per question: method, key results, confidence, limitations.
    - Include candidate conclusion sentences for the presentation.
-   - List versions of any additionally installed packages.
+   - List the versions of the main packages used (Python, scikit-learn, statsmodels, etc.).
 
 ## Rules
 - **Do not modify or delete the original `src/01~07` notebooks, existing files in `outputs/`, or files made by `data-analyst`.** Do not even read the original notebooks or original results.
-- Write only to `src/재검증/07*`, `outputs/재검증/07/`, `reviews/`, `.venv/`. If packages must be added to root `requirements.txt`, keep existing lines and only append.
+- Write only to `src/재검증/07*`, `outputs/재검증/07/`, `reviews/`. If you import a package not yet listed in root `requirements.txt`, append its installed version; keep existing lines.
 - Undervalued-동 rankings are for **internal validation only**. Never present 동 names as presentation conclusions or recommendations.
 - Do not use wording that reads as investment advice or a buy recommendation.
-- No external API calls. Install packages only into the root `.venv`, and only after user approval.
+- No external API calls.
+- **Run environment:** use the existing anaconda base Python (`/opt/anaconda3/bin/python3`, Python 3.13.5). Do not create virtual environments (`.venv`, conda env) and do not install or upgrade packages. If a needed package is missing or broken, stop and report it.
 
 ## Stop and ask when
+- A package install or upgrade is needed
 - The cleaned data is missing or malformed
 - The research questions must change or the scope must expand substantially
 - A method different from the textbook-based plan is needed
 - Progress requires changing existing files
 
 ## Tools
-- Allowed: Read, Grep, Glob, Bash (`.venv` installs, running notebooks), Write/Edit (only in the allowed write locations above)
+- Allowed: Read, Grep, Glob, Bash (running notebooks with the anaconda base Python), Write/Edit (only in the allowed write locations above)
 - Forbidden: git commit/push, web search, external API calls
