@@ -1,0 +1,16 @@
+# 재분석(src/재검증) 노트북이 실제로 import하는 패키지와 실행 도구의 설치 버전
+# Python 3.13.5 (anaconda base, /opt/anaconda3/bin/python3)
+# 가상환경을 만들지 않고 anaconda 기본 환경에서 실행했다.
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.17.1
+statsmodels==0.15.0
+scikit-learn==1.9.0
+matplotlib==3.10.9
+pyarrow==19.0.0
+openpyxl==3.1.5
+mlxtend==0.25.0
+# 노트북 실행(jupyter nbconvert --execute)
+nbconvert==7.16.6
+nbformat==5.10.4
+ipykernel==6.29.5

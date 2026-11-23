@@ -1,0 +1,25 @@
+{
+  "question": "가격을 빼고 동 특성만으로 묶어도 가격 수준이 다른 유형이 나타나는가?(02 추가안)",
+  "method": "dong_features의 통근·학원·지하철·버스·연식·세대수 표준화 → k-means(k=2~6, 실루엣·엘보우, 동 부트스트랩 ARI) → 유형별 동 보정 가격 수준(2024-01~2026-09), 유형별 단지FE 지수 변동성(2019-01~2026-09), 02 급지와 ARI·Cramér's V",
+  "textbook_chapters": [
+    "7장 k-means",
+    "8장 실루엣·엘보우·지도 시각화"
+  ],
+  "sample_period": "특징: 현재 시점(2026-10~11 기준), 가격: 2024-01~2026-09, 지수: 2019-01~2026-09",
+  "sample_size": {
+    "dongs_clustered": 272,
+    "dongs_with_price": 255
+  },
+  "data_files": [
+    "outputs/재검증/00_정제/dong_features.parquet",
+    "outputs/재검증/00_정제/transactions.parquet",
+    "outputs/재검증/02/gu_groups.csv"
+  ],
+  "limitations": [
+    "통근시간 결측 동(도심 62개 등)은 군집에서 빠졌다",
+    "입력 특징은 모두 현재 시점 자료",
+    "유형별 가격 차이는 연관이며 원인이 아니다",
+    "유형 이름은 입력 특징 평균으로 붙인 서술용",
+    "2026-08~09는 잠정 월"
+  ]
+}

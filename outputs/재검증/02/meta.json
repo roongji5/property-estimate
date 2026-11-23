@@ -1,0 +1,25 @@
+{
+  "question": "가격으로 분류한 급지 사이에 선행·후행 관계가 나타나는가?",
+  "method": "2018년 기준 구별 보정 가격으로 k-means(k=2~6, 실루엣·엘보우, 부트스트랩·기준연도 ARI) → 급지별 단지FE 월 지수(2019-01~2026-09) → ADF, VAR 시차(BIC/AIC), 쌍별 HAC Granger, 다변량 HAC Granger(주), 기본 VAR Wald(민감도), BH FDR, Ljung-Box",
+  "textbook_chapters": [
+    "7장 k-means",
+    "8장 실루엣·엘보우·지도 시각화"
+  ],
+  "sample_period": "분류 2018-01~2018-12, 검정 2019-01~2026-09",
+  "sample_size": {
+    "base_year_tx": 81073,
+    "analysis_tx": 421657,
+    "gu": 25
+  },
+  "data_files": [
+    "outputs/재검증/00_정제/transactions.parquet"
+  ],
+  "limitations": [
+    "2018년은 취소 정보가 없는 기간",
+    "급지마다 구·거래 수가 달라 측정 잡음이 다르다(table_tier_noise.csv)",
+    "Granger는 예측상의 선후 관계이며 인과가 아니다",
+    "2026-08~09는 잠정 월",
+    "25개 구라 군집 표본이 작다",
+    "급지는 2018년 가격 기준 분석용 구분이며 현재 서열과 다를 수 있다"
+  ]
+}

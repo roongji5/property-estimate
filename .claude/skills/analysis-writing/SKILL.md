@@ -66,7 +66,7 @@ For each question, in this order:
 
 ## 7. Output files for a future dashboard
 HTML conversion is **not** done now, but every `outputs/재검증/<번호>/` folder must be ready to drop into a single-page dashboard later (`web-builder` will read these files).
-- **`summary.csv` per folder (required):** one row per headline number. Columns: `key, label, value, unit, sample_n, period, split_type, claim_level, source_file, note`.
+- **`summary.csv` per folder (required):** one row per headline number. Columns: `key, label, value, unit, sample_n, period, period_start, period_end, split_type, claim_level, source_file, note`. `period_start`/`period_end` are `YYYY-MM` (required); prefix interest-rate result keys with `rate_`.
   - `claim_level` ∈ `단순 변화 / 통계적 연관 / 예측 기여도 / 가정 시나리오` (section 1).
   - `split_type` ∈ `없음 / 무작위 / 그룹(단지) / 그룹(동) / 공간블록 / 시간순 / 워크포워드`.
 - **One tidy CSV per chart:** long format, fixed snake_case English column names, UTF-8 (with BOM if Excel must open it), dates as `YYYY-MM` or `YYYY-Qn`. Name it after the chart, e.g. `fig_monthly_price.csv`.

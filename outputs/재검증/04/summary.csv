@@ -1,0 +1,20 @@
+﻿key,label,value,unit,sample_n,period,period_start,period_end,split_type,claim_level,source_file,note
+acad_elasticity_main,"(1+입시·보습 학원 수)에 대한 동 가격 수준 탄력성(동 단위, 구 FE)",0.031673800737459554,탄력성(Δlog 가격/Δlog(1+학원 수)),259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"동 단위 강건 SE 0.0159, 95% CI 0.000~0.063, p=0.0478, wild bootstrap p=0.05, 동 259개(거래 30건 이상)"
+acad_top10_pct,학원가(입시·보습 상위10% 동) 동 가격 수준 차이(동 단위),12.58006496850188,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.039, wild bootstrap p=0.045, 동 259개"
+acad_top20_pct,학원가(입시·보습 상위20% 동) 동 가격 수준 차이(동 단위),4.986502451692387,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.25, wild bootstrap p=0.259, 동 259개"
+acad_top30_pct,학원가(입시·보습 상위30% 동) 동 가격 수준 차이(동 단위),5.354167318773939,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.194, wild bootstrap p=0.2, 동 259개"
+acad_elasticity_samesample,S1 같은 표본(교통 자료 있는 동) 사양의 (1+학원 수) 탄력성(동 단위),0.03240808502964754,탄력성(Δlog 가격/Δlog(1+학원 수)),255,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.0435, wild bootstrap p=0.039, 동 255개"
+acad_elasticity_transit,교통·단지규모 통제 사양의 (1+학원 수) 탄력성(동 단위),0.03736185108230145,탄력성(Δlog 가격/Δlog(1+학원 수)),255,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.0123, wild bootstrap p=0.013, 동 255개"
+acad_elasticity_commute,통근시간 추가 사양의 (1+학원 수) 탄력성(동 단위),0.03514013935977538,탄력성(Δlog 가격/Δlog(1+학원 수)),255,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"p=0.0141, wild bootstrap p=0.012, 동 255개"
+acad_tx_level_main,거래 단위 모형 S1 주 사양 계수(민감도),0.03898624000489935,탄력성(Δlog 가격/Δlog(1+학원 수)),181874,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"거래 가중·구×연월 FE, 동 클러스터 330개, p=0.0127, wild p=0.036(수정 전 방식 0.018)"
+acad_tx_level_top20,거래 단위 모형 학원가 상위20% 계수(민감도),1.9121359974651142,%,181874,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"거래 가중·구×연월 FE, 동 클러스터 330개, p=0.571, wild p=0.605(수정 전 방식 0.57)"
+acad_tx_level_transit,거래 단위 모형 교통·단지규모 통제 계수(민감도),0.05966061745211366,탄력성(Δlog 가격/Δlog(1+학원 수)),181263,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"거래 가중·구×연월 FE, 동 클러스터 272개, p=2.83e-06, wild p=0.001(수정 전 방식 0.001)"
+acad_double_pct_at_p25,학원 수가 기준값 A=4개(p25)에서 2배일 때 동 가격 수준 차이(동 단위),1.8791822713147166,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"100×[exp(b·log((1+2A)/(1+A)))−1], b=0.0317, b의 95% CI로 0.02~3.77%"
+acad_double_pct_at_median,학원 수가 기준값 A=22개(median)에서 2배일 때 동 가격 수준 차이(동 단위),2.1486020757229385,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"100×[exp(b·log((1+2A)/(1+A)))−1], b=0.0317, b의 95% CI로 0.02~4.32%"
+acad_double_pct_at_p75,학원 수가 기준값 A=66.5개(p75)에서 2배일 때 동 가격 수준 차이(동 단위),2.1956688425099458,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,"100×[exp(b·log((1+2A)/(1+A)))−1], b=0.0317, b의 95% CI로 0.02~4.42%"
+n_school_elem_pct,n_school_elem 1개당 동 가격 수준 차이(동 단위),-1.4097813271192416,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,p=0.188
+n_school_middle_pct,n_school_middle 1개당 동 가격 수준 차이(동 단위),-0.21545484618487043,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,p=0.898
+n_school_high_pct,n_school_high 1개당 동 가격 수준 차이(동 단위),2.872778169615664,%,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_sensitivity_table.csv,p=0.0227
+wild_boot_synth_reject5_refe,합성 자료 5% 기각률(wild bootstrap 수정판),0.03,비율,300,2024-01~2026-09,2024-01,2026-09,없음,단순 변화,table_wild_boot_synthetic_check.csv,"귀무 참, 수정 전 방식 0.043"
+spearman_acad_level_within_gu,학원 수와 구 안 동 가격 수준의 순위상관,0.05449480715452005,상관계수,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_acad_scatter.csv,거래 30건 이상 동
+rule_acad_to_high_lift,연관규칙 학원가→고가 향상도,1.1494082840236688,lift,259,2024-01~2026-09,2024-01,2026-09,없음,통계적 연관,fig_assoc_rules.csv,"support 0.046, confidence 0.231, 서술용"
