@@ -16,6 +16,7 @@ Rules for any AI coding tool (Claude Code, Codex, etc.) working in this reposito
 | `src/` | Analysis code files (notebooks). Put all new code files here | |
 | `outputs/` | Results (CSV, PNG) made by the code in `src/`. Create this folder if it does not exist | |
 | `src/05_직주근접_가격_분석.ipynb` | Earlier notebook kept for its Google Routes API call code | |
+| `docs/교재/` | Textbook full text, chapters 1–11 (copyrighted, git-ignored) | **Read only**. Do not commit |
 
 - **Treat `구버전/` as if it does not exist.** Do not read, reference, copy from, run, or modify anything in it.
 
@@ -29,7 +30,7 @@ Rules for any AI coding tool (Claude Code, Codex, etc.) working in this reposito
 - Use a Korean font in charts so the text is not broken.
 
 ## Code level
-- Use only the techniques covered in the course textbook 「오렌지3 with 파이썬」 (summary: `reviews/교재기반_분석안_조율_2026-11-23.md`, "교재 기법 요약" table):
+- Use only the techniques covered in the course textbook 「오렌지3 with 파이썬」. The full text of chapters 1–11 is in `docs/교재/` (one Markdown file per chapter). Before using a technique, read its chapter and match the textbook's code style and level. Summary of techniques by chapter (also in `reviews/교재기반_분석안_조율_2026-11-23.md`):
   | Chapter | Techniques |
   | --- | --- |
   | 1–2 | 7:3 train/test split, stratify, 10-fold cross-validation, train/validation/test split, 6-step workflow |
