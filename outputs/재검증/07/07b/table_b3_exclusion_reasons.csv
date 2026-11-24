@@ -1,0 +1,9 @@
+﻿window,missing_columns,n_dong,n_tx
+2025Q4~2026Q3,"commute_min,subway_dist_m,subway_n_1km,nearest_transfer_share,bus_n_500m,apt_n_complex,apt_households_median,apt_large_share,lat,lon",25,104
+2025Q4~2026Q3,"commute_min,apt_n_complex,apt_households_median,apt_large_share",16,82
+2025Q4~2026Q3,"commute_min,subway_dist_m,subway_n_1km,nearest_transfer_share,bus_n_500m,lat,lon",2,46
+2025Q4~2026Q3,"apt_households_median,apt_large_share",2,7
+2025Q3~2026Q2,"commute_min,subway_dist_m,subway_n_1km,nearest_transfer_share,bus_n_500m,apt_n_complex,apt_households_median,apt_large_share,lat,lon",22,101
+2025Q3~2026Q2,"commute_min,apt_n_complex,apt_households_median,apt_large_share",16,75
+2025Q3~2026Q2,"commute_min,subway_dist_m,subway_n_1km,nearest_transfer_share,bus_n_500m,lat,lon",2,48
+2025Q3~2026Q2,"apt_households_median,apt_large_share",2,10

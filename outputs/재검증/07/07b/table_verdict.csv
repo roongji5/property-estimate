@@ -1,0 +1,2 @@
+﻿design,model,auc_with_gap,auc_without_gap,auc_momentum1,auc_momentum4,delta_auc,ci_low,ci_high,delta_auc_2021,delta_auc_2022~23,delta_auc_2024~,n_phase_positive,cond1,cond2,cond3,pass,n_pred,n_quarter,first_origin,last_origin
+main_a1_b2,로지스틱,0.5072157247064897,0.5107777657250004,0.4953486669598519,0.47930558902724646,-0.0035620410185107643,-0.01343974509970059,0.005503115296895215,-0.001483870967741996,0.0015358856720982805,-0.0061540716465476875,1,False,True,False,False,2736,20,2021-Q1,2025-Q4

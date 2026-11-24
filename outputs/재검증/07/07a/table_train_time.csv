@@ -1,0 +1,9 @@
+﻿h,model,train_sec_total
+1,ridge,0.09
+1,rf,12.46
+1,hgb,145.51
+1,hgb_q,391.39
+4,ridge,0.05
+4,rf,7.61
+4,hgb,53.16
+4,hgb_q,155.52

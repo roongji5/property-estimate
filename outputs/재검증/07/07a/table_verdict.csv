@@ -1,0 +1,3 @@
+﻿h,best_baseline,best_key,mae_ridge,mae_best_baseline,delta_mae,ci_low,ci_high,ci_low_moving_block,ci_high_moving_block,phase_wins,win_2020~21,win_2022~23,win_2024~,cond1,cond2,cond3,pass,n_pred,n_origin,origin_first,origin_last
+1,풀링 AR(1),ar1,3.718118016306463,3.103832217767367,0.6142857985390959,-0.5411680791727385,1.9350096999831858,-0.5411680791727385,1.9350096999831858,0,False,False,False,False,False,False,False,575,23,2020-Q3,2026-Q1
+4,랜덤워크,rw,15.52800439292874,10.205933109662212,5.322071283266526,0.3077103101528737,10.823361973519281,1.1887724438127119,13.717834199198284,1,False,False,True,False,False,False,False,500,20,2020-Q3,2025-Q2
