@@ -338,6 +338,44 @@ def dong_level(d: pd.DataFrame, char_refs: dict | None = None):
     return pd.DataFrame({"dong_id": labels, "adj_log_level": lev, "n_tx": cnt}), res
 
 
+# ---------------------------------------------------------------- 쉬운 버전(학부 수준)
+# 계수만 필요한 곳에서 쓴다: 그룹 평균 빼기 + LinearRegression. 원래 함수와 값이 같다(차이 1e-8 이하).
+def subtract_group_mean(df, group):
+    """그룹마다 평균을 빼서 '같은 그룹 안의 차이'만 남긴다(고정효과)."""
+    return df - df.groupby(group).transform("mean")
+
+
+def easy_index(d, months, fe="complex_id", char_refs=None):
+    """월별 구성 보정 지수: 월·특성 더미 → 구(단지) 평균 빼기 → LinearRegression → 첫 달=100."""
+    from sklearn.linear_model import LinearRegression
+    char_refs = char_refs or (CHAR_REFS_NOAGE if fe == "complex_id" else CHAR_REFS)
+    d = d[d["contract_ym"].isin(months)].reset_index(drop=True)
+    M = pd.get_dummies(pd.Categorical(d["contract_ym"], categories=months), prefix="m", prefix_sep="=", dtype=float)
+    X = pd.concat([M.iloc[:, 1:], dummies(d, char_refs).reset_index(drop=True)], axis=1)
+    X, y = subtract_group_mean(X, d[fe]), subtract_group_mean(d["log_ppa"], d[fe])
+    X = X.loc[:, X.std() > 1e-10]                     # 그룹 안에서 안 변하는 열 제외
+    m = LinearRegression(fit_intercept=False).fit(X, y)
+    coef = pd.Series(m.coef_, index=X.columns)
+    out = pd.DataFrame({"month": months, "log_index": [0.0] + [coef.get(f"m={t}", np.nan) for t in months[1:]]})
+    out["index"] = 100 * np.exp(out["log_index"])
+    out["n"] = out["month"].map(d["contract_ym"].value_counts())
+    return out, {"n": len(d), "r2_within": m.score(X, y)}
+
+
+def easy_dong_level(d, char_refs=None):
+    """동 가격 수준: 동 평균 빼고 월·특성 계수 추정 → 동별 '가격 − 월·특성 몫' 평균(거래 가중 평균 0)."""
+    from sklearn.linear_model import LinearRegression
+    d = d.reset_index(drop=True)
+    X = pd.concat([pd.get_dummies(d["contract_ym"], prefix="m", dtype=float).iloc[:, 1:],
+                   dummies(d, char_refs or CHAR_REFS).reset_index(drop=True)], axis=1)
+    dong = d["dong_id"].astype(str)
+    m = LinearRegression(fit_intercept=False).fit(subtract_group_mean(X, dong), subtract_group_mean(d["log_ppa"], dong))
+    level = (d["log_ppa"] - X.to_numpy() @ m.coef_).groupby(dong).mean()
+    n_tx = dong.value_counts()[level.index]
+    level -= np.average(level, weights=n_tx)
+    return pd.DataFrame({"dong_id": level.index, "adj_log_level": level.values, "n_tx": n_tx.values}), {"n": len(d)}
+
+
 # ---------------------------------------------------------------- 공간
 def haversine_m(lat1, lon1, lat2, lon2):
     R = 6371000.0

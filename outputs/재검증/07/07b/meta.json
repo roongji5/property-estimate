@@ -21,6 +21,6 @@
     "동별 괴리 값과 순위는 내부 검증용(*_internal_only.csv)이며 발표·공개 대상이 아니다. 매수·매도 판단 근거가 아니다."
   ],
   "seed": 42,
-  "runtime_sec": 593.6,
-  "runtime_note": "트랙 H 괴리 177초, 보정 가격 빈티지 17초, B2 워크포워드 89초, B3 146초. 주설계 모형 학습 시간(전 시점 합, 초): 로지스틱|with 0.1, 로지스틱|without 0.1, 모멘텀1 단일|base 0.0, 모멘텀4 단일|base 0.0, GaussianNB|with 0.1, GaussianNB|without 0.1, 결정트리(깊이4)|with 0.1, 결정트리(깊이4)|without 0.1, HistGB분류|with 22.7, HistGB분류|without 21.7, MLP(16)|with 14.7, MLP(16)|without 13.7"
+  "runtime_sec": 522.9,
+  "runtime_note": "트랙 H 괴리 135초, 보정 가격 빈티지 17초, B2 워크포워드 85초, B3 150초. 주설계 모형 학습 시간(전 시점 합, 초): 로지스틱|with 0.1, 로지스틱|without 0.1, 모멘텀1 단일|base 0.0, 모멘텀4 단일|base 0.0, GaussianNB|with 0.0, GaussianNB|without 0.0, 결정트리(깊이4)|with 0.1, 결정트리(깊이4)|without 0.1, HistGB분류|with 20.1, HistGB분류|without 21.0, MLP(16)|with 14.8, MLP(16)|without 13.2"
 }

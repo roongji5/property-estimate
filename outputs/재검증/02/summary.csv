@@ -1,7 +1,7 @@
 ﻿key,label,value,unit,sample_n,period,period_start,period_end,split_type,claim_level,source_file,note
 k_main,실루엣 기준 주 k,2.0,개,25,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,k=2~6 중 실루엣 최댓값(사전 규칙)
-silhouette_k_main,k=2 실루엣 점수,0.5716099837419715,점수,25,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,"구 25개, 2018년 거래 81,073건"
-silhouette_k4,k=4 실루엣 점수,0.5190708625158585,점수,25,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,업계 관행 비교용
+silhouette_k_main,k=2 실루엣 점수,0.5716099837419415,점수,25,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,"구 25개, 2018년 거래 81,073건"
+silhouette_k4,k=4 실루엣 점수,0.5190708625158305,점수,25,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,업계 관행 비교용
 boot_ari_k_main,k=2 단지 부트스트랩 ARI 평균,0.7893137547710555,ARI,81073,2018-01~2018-12,2018-01,2018-12,없음,단순 변화,fig_k_selection.csv,"200회, 5~95% 0.55~1.00"
 ari_2019_vs_2018_k_main,k=2 기준연도 2019 vs 2018 ARI,0.6930058729311266,ARI,25,2018-01~2019-12,2018-01,2019-12,없음,단순 변화,fig_k_selection.csv,기준연도 변경 민감도
 granger_varhac_n_sig_q05_k2_BIC,"다변량 HAC Granger q<0.05인 방향 수(k=2, BIC)",0.0,개,421657,2019-01~2026-09,2019-01,2026-09,없음,통계적 연관,fig_granger_heatmap.csv,"전체 2개 방향 중, 시차 1. 기본 VAR 검정(민감도) 1개. k=2는 쌍별 검정과 같음"

@@ -1,13 +1,13 @@
 ﻿design,model,spec,train_sec_total
 main_a1_b2,로지스틱,with,0.1
-main_a1_b2,로지스틱,without,0.09
+main_a1_b2,로지스틱,without,0.08
 main_a1_b2,모멘텀1 단일,base,0.04
 main_a1_b2,모멘텀4 단일,base,0.04
-main_a1_b2,GaussianNB,with,0.11
+main_a1_b2,GaussianNB,with,0.05
 main_a1_b2,GaussianNB,without,0.05
-main_a1_b2,결정트리(깊이4),with,0.11
+main_a1_b2,결정트리(깊이4),with,0.1
 main_a1_b2,결정트리(깊이4),without,0.09
-main_a1_b2,HistGB분류,with,22.73
-main_a1_b2,HistGB분류,without,21.73
-main_a1_b2,MLP(16),with,14.67
-main_a1_b2,MLP(16),without,13.66
+main_a1_b2,HistGB분류,with,20.1
+main_a1_b2,HistGB분류,without,20.98
+main_a1_b2,MLP(16),with,14.81
+main_a1_b2,MLP(16),without,13.18

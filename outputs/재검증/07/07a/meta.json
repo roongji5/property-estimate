@@ -26,6 +26,6 @@
     "예측값은 모형 계산값이며 매수·매도 판단 근거가 아니다."
   ],
   "seed": 42,
-  "runtime_sec": 883.7,
-  "runtime_note": "빈티지 지수 재추정 60초 포함. 모형 학습 시간(전 시점 합, 초): h=1 ridge 0.1/rf 12.5/hgb 145.5/hgb_q 391.4, h=4 ridge 0.0/rf 7.6/hgb 53.2/hgb_q 155.5"
+  "runtime_sec": 183.5,
+  "runtime_note": "빈티지 지수 재추정 20초 포함. 모형 학습 시간(전 시점 합, 초): h=1 ridge 0.0/rf 7.4/hgb 17.6/hgb_q 57.0, h=4 ridge 0.1/rf 6.7/hgb 9.1/hgb_q 34.4"
 }
